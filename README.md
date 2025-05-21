@@ -52,6 +52,7 @@ En effet, il faut effectuer quelques configuration pour ne pas avoir de erreurs 
 1. Décompresser le fichier zip
 
 Voici l’aperçu initial 
+
 ![howtoPicture1](/poject/pics/howtoPicture1.png)
 
   **archive** :  contient les fichier test  et  toute autre ligne de code utilisé pour   lors de la création de scripts 
