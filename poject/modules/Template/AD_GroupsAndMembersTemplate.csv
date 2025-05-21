@@ -1,0 +1,33 @@
+GName,GScope,GType,GDescription,GMembres
+Comptabilité_Global_Security,Universal,Security,Groupe de sécurité pour le département Comptabilité,Anne.Paper@beemusic.ch;Fukke.Oaisu@beemusic.ch;James.Smith@beemusic.ch;Laurent.Vossen@beemusic.ch;Luis.RodierRemirez@beemusic.ch;Meng.Phua@beemusic.ch;Sandra.MartinezLopez@beemusic.ch;Stefan.Knorr@beemusic.ch;Sunil.Koduri@beemusic.ch
+Comptabilité_Local_Genève_Security,Universal,Security,Groupe de sécurité pour le département Comptabilité à Genève,James.Smith@beemusic.ch;Laurent.Vossen@beemusic.ch
+RH_Global_Security,Universal,Security,Groupe de sécurité pour le département RH,Carolyn.Soeley@beemusic.ch;Eudora.McGinn@beemusic.ch;Kim.Yoshida@beemusic.ch;Judy.Lew@beemusic.ch;Michelle.Votaya@beemusic.ch;Robert.Lyon@beemusic.ch;Sophie.Moreau@beemusic.ch
+RH_Recrutement_Security,Universal,Security,Groupe de sécurité pour l'équipe de Recrutement,Kim.Yoshida@beemusic.ch;Judy.Lew@beemusic.ch
+Informatique_Exploitation_Security,Universal,Security,Groupe de sécurité pour l'équipe d'Exploitation,Arbille.Linus@beemusic.ch;David.Favre@beemusic.ch;Derek.Graham@beemusic.ch;Stephanie.Bourne@beemusic.ch
+Informatique_Application_Security,Universal,Security,Groupe de sécurité pour l'équipe d'Application,Demien.Vacant@beemusic.ch;Marcel.Avagliado@beemusic.ch;Scott.Culp@beemusic.ch
+Informatique_Messagerie_Security,Universal,Security,Groupe de sécurité pour l'équipe de Messagerie,Matthew.Dunn@beemusic.ch;Sherri.Mart@beemusic.ch
+Logiciel_Global_Security,Universal,Security,Groupe de sécurité pour le département Logiciel,Evans.Gray@beemusic.ch;Fabian.Portmann@beemusic.ch;Yan.Rousseau@beemusic.ch;Robert.Maxles@beemusic.ch;Igor.Walha@beemusic.ch;John.Linnzhi@beemusic.ch;Jon.Morris@beemusic.ch;Julie.Oswald@beemusic.ch;Luc.Blanc@beemusic.ch
+Logiciel_Équipe_Europe_Security,Universal,Security,Groupe de sécurité pour l'équipe Logiciel Europe,Yan.Rousseau@beemusic.ch;Luc.Blanc@beemusic.ch;Romain.Martin@beemusic.ch;Jurg.Osborne@beemusic.ch
+Logiciel_Équipe_Amériques_Security,Universal,Security,Groupe de sécurité pour l'équipe Logiciel Amériques,Robert.Maxles@beemusic.ch;John.Linnzhi@beemusic.ch;Sophie.Gaillard@beemusic.ch;Julien.Moreau@beemusic.ch
+Logiciel_Équipe_Asie_Security,Universal,Security,Groupe de sécurité pour l'équipe Logiciel Asie,Igor.Walha@beemusic.ch;Louis.Lefevre@beemusic.ch;Hugo.Durand@beemusic.ch;Chloe.Noel@beemusic.ch
+Matériel_Global_Security,Universal,Security,Groupe de sécurité pour le département Matériel,Juan.Mandela@beemusic.ch;Jean.Valjean@beemusic.ch;John.Wayne@beemusic.ch;Kam.Yang@beemusic.ch;Pierre.Duran@beemusic.ch;Sophie.Moreau@beemusic.ch
+Matériel_Consultants_Europe_Security,Universal,Security,Groupe de sécurité pour les consultants Matériel Europe,Camille.Martin@beemusic.ch;Julien.Girard@beemusic.ch;Chloe.Roux@beemusic.ch;Romain.Lambert@beemusic.ch
+Matériel_Consultants_Asie_Security,Universal,Security,Groupe de sécurité pour les consultants Matériel Asie,Hugo.Robert@beemusic.ch;Paul.Moreau@beemusic.ch;Hugo.Collet@beemusic.ch;Vincent.Lefevre@beemusic.ch
+Direction_Global_Security,Universal,Security,Groupe de sécurité pour la Direction,Gérard.Niederbio@beemusic.ch;Stephanie.Schulz@beemusic.ch
+Azure_Admins_Security,Universal,Security,Groupe de sécurité pour les administrateurs Azure,Fabian.Portmann@beemusic.ch;Olivier.Gorcado@beemusic.ch
+VCenter_Admins_Security,Universal,Security,Groupe de sécurité pour les administrateurs vCenter,Fabian.Portmann@beemusic.ch;Olivier.Gorcado@beemusic.ch
+Comptabilité_Distribution,Universal,Distribution,Groupe de distribution pour le département Comptabilité,Anne.Paper@beemusic.ch;Fukke.Oaisu@beemusic.ch;James.Smith@beemusic.ch
+RH_Distribution,Universal,Distribution,Groupe de distribution pour le département RH,Carolyn.Soeley@beemusic.ch;Kim.Yoshida@beemusic.ch;Judy.Lew@beemusic.ch
+Informatique_Distribution,Universal,Distribution,Groupe de distribution pour le département Informatique,Steve.Jobs@beemusic.ch;Arbille.Linus@beemusic.ch;Demien.Vacant@beemusic.ch
+Logiciel_Distribution,Universal,Distribution,Groupe de distribution pour le département Logiciel,Fabian.Portmann@beemusic.ch;Yan.Rousseau@beemusic.ch;Igor.Walha@beemusic.ch
+Matériel_Distribution,Universal,Distribution,Groupe de distribution pour le département Matériel,Juan.Mandela@beemusic.ch;Jean.Valjean@beemusic.ch
+Direction_Distribution,Universal,Distribution,Groupe de distribution pour la Direction,Gérard.Niederbio@beemusic.ch;Stephanie.Schulz@beemusic.ch
+Azure_Users_Distribution,Universal,Distribution,Groupe de distribution pour les utilisateurs Azure,Fabian.Portmann@beemusic.ch;Olivier.Gorcado@beemusic.ch
+VCenter_Users_Distribution,Universal,Distribution,Groupe de distribution pour les utilisateurs vCenter,Fabian.Portmann@beemusic.ch;Olivier.Gorcado@beemusic.ch
+Logiciel_Europe_Distribution,Universal,Distribution,Groupe de distribution pour l'équipe Logiciel Europe,Yan.Rousseau@beemusic.ch;Luc.Blanc@beemusic.ch;Romain.Martin@beemusic.ch
+Logiciel_Amériques_Distribution,Universal,Distribution,Groupe de distribution pour l'équipe Logiciel Amériques,Robert.Maxles@beemusic.ch;John.Linnzhi@beemusic.ch
+Logiciel_Asie_Distribution,Universal,Distribution,Groupe de distribution pour l'équipe Logiciel Asie,Igor.Walha@beemusic.ch;Louis.Lefevre@beemusic.ch
+Matériel_Europe_Distribution,Universal,Distribution,Groupe de distribution pour les consultants Matériel Europe,Camille.Martin@beemusic.ch;Julien.Girard@beemusic.ch
+Matériel_Asie_Distribution,Universal,Distribution,Groupe de distribution pour les consultants Matériel Asie,Hugo.Robert@beemusic.ch;Paul.Moreau@beemusic.ch
+Global_IT_Security,Universal,Security,Groupe de sécurité global pour tous les IT,Steve.Jobs@beemusic.ch;Fabian.Portmann@beemusic.ch
+Global_Administrative_Distribution,Universal,Distribution,Groupe de distribution global pour les assistants administratifs,Sophie.Moreau@beemusic.ch;Stephanie.Schulz@beemusic.ch

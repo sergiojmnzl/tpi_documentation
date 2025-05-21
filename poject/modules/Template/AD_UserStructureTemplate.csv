@@ -1,0 +1,71 @@
+Active;Prenom;Nom;Messagerie;OU;Description;Poste;Manager;Departement;Ville;Teléphone
+no;Anne;Paper;Anne.Paper@beemusic.ch;Comptabilité;Service Comptabilité;Chef de departement;Gerard.Niederbio@beemusic.ch;Comptabilité;Genève;0223888833
+yes;Arbille;Linus;Arbille.Linus@beemusic.ch;Exploitation;Service Exploitation;Chef d'équipe;Steve.Jobs@beemusic.ch;Informatique;Genève;0223888834
+yes;Carolyn;Soeley;Carolyn.Soeley@beemusic.ch;RH;Service RH;Chef de departement;Gerard.Niederbio@beemusic.ch;RH;Genève;0223888835
+yes;David;Favre;David.Favre@beemusic.ch;Exploitation;Service Informatique;Ingénieur Système;Arbille.Linus@beemusic.ch;Informatique;Genève;0223888836
+yes;Demien;Vacant;Demien.Vacant@beemusic.ch;Application;Service Application ;Chef d'équipe;Steve.Jobs@beemusic.ch;Informatique;Genève;0223888837
+no;Derek;Graham;Derek.Graham@beemusic.ch;Exploitation;Service Derek Graham;Ingenueur reseaux;Arbille.Linus@beemusic.ch;Informatique;Genève;0223888838
+no;Eudora;McGinn;Eudora.McGinn@beemusic.ch;Salaire;Service Salaire;Spécialiste RH;Carolyn.Soeley@beemusic.ch;RH;Genève;0223888839
+yes;Evans;Gray;Evans.Gray@beemusic.ch;Europe;Service Logiciel;Développeur;Olivier.Gorcado@beemusic.ch;Logiciel;Genève;0223888840
+no;Fukke;Oaisu;Fukke.Oaisu@beemusic.ch;Débiteur;Service Comptabilité;Chef d'équipe;Anne.Paper@beemusic.ch;Comptabilité;Genève;0223888841
+no;Fabian;Portmann;Fabian.Portmann@beemusic.ch;Logiciel;Service Logiciel;Chef de departement;Gerard.Niederbio@beemusic.ch;Logiciel;Genève;0223888842
+yes;Gérard;Niederbio;Gerard.Niederbio@beemusic.ch;Direction;Service Direction;CEO;;Direction;Genève;0223888843
+yes;Hans;Bolt;Hans.Bolt@beemusic.ch;Europe;Service Hans Bolt;Technicien;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888844
+yes;Igot;Matha;Igot.Matha@beemusic.ch;Logiciel;Service Logiciel;Consultant Informatique;Fabian.Portmann@beemusic.ch;Logiciel;Genève;0223888845
+yes;Igor;Walha;Igor.Walha@beemusic.ch;Europe;Service Logiciel;Développeur;Yan.Rousseau@beemusic.ch;Logiciel;Genève;0223888846
+yes;James;Smith;James.Smith@beemusic.ch;Débiteur;Service Comptabilité;Comptable;Fukke.Oaisu@beemusic.ch;Comptabilité;Genève;0223888847
+no;Jan;Miksovky;Jan.Miksovky@beemusic.ch;Créancier;Service Comptabilité;Comptable;Sandra.MartinezLopez@beemusic.ch;Comptabilité;Genève;0223888848
+no;Jean;Valjean;Jean.Valjean@beemusic.ch;Europe;Service Jean Valjean;Technicien;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888849
+no;John;Linnzhi;John.Linnzhi@beemusic.ch;Ameriques;Service Logiciel;Développeur;Fabian.Brossard@beemusic.ch;Logiciel;Genève;0223888850
+yes;John;McArthur;John.McArthur@beemusic.ch;Ameriques;Service John McArthur;Technicien;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888851
+yes;John;Wayne;John.Wayne@beemusic.ch;Ameriques;Service Ameriques;Technicien;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888852
+yes;Jon;Morris;Jon.Morris@beemusic.ch;Europe;Service Logiciel;Développeur;Fabian.Brossard@beemusic.ch;Logiciel;Genève;0223888853
+yes;Juan;Mandela;Juan.Mandela@beemusic.ch;Materiel;Service Matériel;Chef de departement;Gerard.Niederbio@beemusic.ch;Matériel;Genève;0223888854
+yes;Judy;Lew;Judy.Lew@beemusic.ch;Recrutement;Service Recrutement;Spécialiste RH;Kim.Yoshida@beemusic.ch;RH;Genève;0223888855
+yes;Julie;Oswald;Julie.Oswald@beemusic.ch;Europe;Service Logiciel;Développeur;Yan.Rousseau@beemusic.ch;Logiciel;Genève;0223888856
+yes;Jurg;Osborne;Jurg.Osborne@beemusic.ch;Europe;Service Logiciel;Développeur;Yan.Rousseau@beemusic.ch;Logiciel;Genève;0223888857
+no;Kam;Yang;Kam.Yang@beemusic.ch;Asie;Service Asie;Technicien;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888858
+yes;Kim;Yoshida;Kim.Yoshida@beemusic.ch;Recrutement;Service Recrutement;Spécialiste RH;Carolyn.Soeley@beemusic.ch;RH;Genève;0223888859
+yes;Laurent;Vossen;Laurent.Vossen@beemusic.ch;Débiteur;Service Comptabilité;Comptable;Fukke.Oaisu@beemusic.ch;Comptabilité;Genève;0223888860
+no;Luis;Rodier Remirez;Luis.RodierRemirez@beemusic.ch;Débiteur;Service Comptabilité;Comptable;Fukke.Oaisu@beemusic.ch;Comptabilité;Genève;0223888861
+no;Marcel;Avagliado;Marcel.Avagliado@beemusic.ch;Application;Service Application ;Ingénieur Système;Demien.Vacant@beemusic.ch;Informatique;Genève;0223888862
+yes;Matthew;Dunn;Matthew.Dunn@beemusic.ch;Messagerie;Service Messagerie;Ingénieur Système;Steve.Jobs@beemusic.ch;Informatique;Genève;0223888863
+yes;Michelle;Votaya;Michelle.Votaya@beemusic.ch;Salaire;Service Salaire;Spécialiste RH;Eudora.McGinn@beemusic.ch;RH;Genève;0223888864
+yes;Meng;Phua;Meng.Phua@beemusic.ch;Débiteur;Service Comptabilité;Comptable;Fukke.Oaisu@beemusic.ch;Comptabilité;Genève;0223888865
+yes;Olivier;Gorcado;Olivier.Gorcado@beemusic.ch;Asie;Service Logiciel;Consultant;Fabian.Portmann@beemusic.ch;Logiciel;Genève;0223888866
+yes;Jean Pierre;Duran;JeanPierre.Duran@beemusic.ch;Europe;Service Europe;Technicien;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888867
+no;Pietro;Vitale;Pietro.Vitale@beemusic.ch;Europe;Service Pietro Vitale;Technicien;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888868
+yes;Ray;Sautowski;Ray.Sautowski@beemusic.ch;Ameriques;Service Matériel;Technicien;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888869
+yes;Robert;Maxles;Robert.Maxles@beemusic.ch;Ameriques;Service Logiciel;Développeur;Fabian.Portmann@beemusic.ch;Logiciel;Genève;0223888870
+yes;Robert;Lyon;Robert.Lyon@beemusic.ch;Formation;Service Formation;Spécialiste RH;Carolyn.Soeley@beemusic.ch;RH;Genève;0223888871
+yes;Sandra;Martinez Lopez;Sandra.MartinezLopez@beemusic.ch;Créancier;Service Comptabilité;Comptable;Anne.Paper@beemusic.ch;Comptabilité;Genève;0223888872
+yes;Scott;Culp;Scott.Culp@beemusic.ch;Application;Service Application ;Ingénieur Système;Demien.Vacant@beemusic.ch;Informatique;Genève;0223888873
+yes;Sherri;Mart;Sherri.Mart@beemusic.ch;Messagerie;Service Messagerie;Ingénieur Système;Matthew.Dunn@beemusic.ch;Informatique;Genève;0223888874
+no;Stefan;Knorr;Stefan.Knorr@beemusic.ch;Créancier;Service Comptabilité;Consultant Informatique;Sandra.MartinezLopez@beemusic.ch;Comptabilité;Genève;0223888875
+no;Stephanie;Bourne;Stephanie.Bourne@beemusic.ch;Exploitation;Service Stephanie Bourne;Administrateur système;Arbille.Linus@beemusic.ch;Informatique;Genève;0223888876
+yes;Stephanie;Schulz;Stephanie.Schulz@beemusic.ch;Direction;Direction;Assistante;Gerard.Niederbio@beemusic.ch;Direction;Genève;0223888877
+yes;Steve;Jobs;Steve.Jobs@beemusic.ch;Informatique;Service Informatique;Chef de departement;Stephanie.Schulz@beemusic.ch;Informatique;Genève;0223888878
+yes;Sunil;Koduri;Sunil.Koduri@beemusic.ch;Créancier;Service Comptabilité;Comptable;Sandra.MartinezLopez@beemusic.ch;Comptabilité;Genève;0223888879
+yes;Yan;Rousseau;Yan.Rousseau@beemusic.ch;Europe;Service Logiciel;Développeur;Fabian.Portmann@beemusic.ch;Logiciel;Genève;0223888880
+yes;Luc;Blanc;Luc.Blanc@beemusic.ch;Europe;Service Logiciel;Développeur;Fabian.Brossard@beemusic.ch;Logiciel;Genève;0223888881
+yes;Louis;Lefevre;Louis.Lefevre@beemusic.ch;Asie;Service Logiciel;Développeur;Fabian.Brossard@beemusic.ch;Logiciel;Genève;0223888882
+yes;Sophie;Gaillard;Sophie.Gaillard@beemusic.ch;Amériques;Service Logiciel;Développeur;Fabian.Brossard@beemusic.ch;Logiciel;Genève;0223888883
+yes;Romain;Martin;Romain.Martin@beemusic.ch;Europe;Service Logiciel;Développeur;Fabian.Brossard@beemusic.ch;Logiciel;Genève;0223888884
+yes;Hugo;Durand;Hugo.Durand@beemusic.ch;Asie;Service Logiciel;Développeur;Fabian.Brossard@beemusic.ch;Logiciel;Genève;0223888885
+no;Julien;Moreau;Julien.Moreau@beemusic.ch;Amériques;Service Logiciel;Développeur;Fabian.Brossard@beemusic.ch;Logiciel;Genève;0223888886
+yes;Sophie;Girard;Sophie.Girard@beemusic.ch;Europe;Service Logiciel;Développeur;Fabian.Brossard@beemusic.ch;Logiciel;Genève;0223888887
+yes;Chloé;Noel;Chloe.Noel@beemusic.ch;Asie;Service Logiciel;Développeur;Fabian.Brossard@beemusic.ch;Logiciel;Genève;0223888888
+yes;Camille;Martin;Camille.Martin@beemusic.ch;Europe;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888889
+no;Hugo;Robert;Hugo.Robert@beemusic.ch;Asie;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888890
+yes;Julien;Girard;Julien.Girard@beemusic.ch;Europe;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888891
+yes;Paul;Moreau;Paul.Moreau@beemusic.ch;Asie;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888892
+no;Chloé;Roux;Chloe.Roux@beemusic.ch;Europe;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888893
+yes;Hugo;Collet;Hugo.Collet@beemusic.ch;Asie;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888894
+yes;Romain;Lambert;Romain.Lambert@beemusic.ch;Europe;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888895
+yes;Vincent;Lefevre;Vincent.Lefevre@beemusic.ch;Asie;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888896
+yes;Camille;Lemoine;Camille.Lemoine@beemusic.ch;Europe;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888897
+no;Alexandre;Girard;Alexandre.Girard@beemusic.ch;Asie;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888898
+yes;Luc;Lefevre;Luc.Lefevre@beemusic.ch;Europe;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888899
+yes;Paul;Chevalier;Paul.Chevalier@beemusic.ch;Asie;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888900
+yes;Paul;Fontaine;Paul.Fontaine@beemusic.ch;Europe;Service Matériel Consultant;Consultant;Juan.Mandela@beemusic.ch;Matériel;Genève;0223888901
+no;Sophie;Moreau;Sophie.Moreau@beemusic.ch;Formation;Assistante Administrative RH;Assistante;Carolyn.Seeley@beemusic.ch;RH;Genève;0223888902
