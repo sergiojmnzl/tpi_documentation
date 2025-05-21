@@ -2,6 +2,7 @@
 
 Afin de suive les Exigences techniques dans le cahier de charge, pour Maintenance et évolutivité :
 > « Le code doit être modulaire pour permettre des extensions ou des mises à jour futures (par ex., ajout de nouvelles opérations ou intégration avec des outils tiers). Les fonctions principales doivent être réutilisables et indépendantes. (Par ex., même fonction de génération de mod de passe pour « Joiner » ou « Leaver » 
+
 Il a été nécessaire de réimager le script initialement demandé. En effet, la création d’un seul et unique script de 2000 lignes n’est pas une solution viable. Une telle approche rendrait le code difficile à lire, à maintenir et à déboguer. De plus, cela irait à l’encontre des principes de la programmation modulaire.
 Le script a donc été divisé en plusieurs modules, chacun ayant une responsabilité spécifique. Cela permet de mieux organiser le code, de faciliter la maintenance et d'améliorer la lisibilité. Cela permet de réutiliser des fonctions dans différents contextes sans avoir à dupliquer le code. 
 
