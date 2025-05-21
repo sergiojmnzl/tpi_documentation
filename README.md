@@ -20,7 +20,7 @@ In conclusion, this script is there to make life easier for administrators.
     - [Debug](documentation/conception.md#Debug)
   - [Orchestrateur](documentation/conception.md#Orchestrateur)
     - [Aperçu du script](/poject/Orchetrator.ps1)
-[**Modules**](/poject/modules)
+**[Modules](/poject/modules)**
   - [Modules d’opération](/poject/modules/operations/readme.md)
     - [Get-VMsFromAzure](/poject/modules/operations/TPI_OPS_BackupAzureVM.psm1)
     - [Get-VMsFromVcenters](/poject/modules/operations/TPI_OPS_BackupVcenterVM.psm1)
