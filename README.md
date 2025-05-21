@@ -20,6 +20,7 @@ In conclusion, this script is there to make life easier for administrators.
     - [Debug](documentation/conception.md#Debug)
   - [Orchestrateur](documentation/conception.md#Orchestrateur)
     - [Aperçu du script](/poject/Orchetrator.ps1)
+
 **[Modules](/poject/modules)**
   - [Modules d’opération](/poject/modules/operations/readme.md)
     - [Get-VMsFromAzure](/poject/modules/operations/TPI_OPS_BackupAzureVM.psm1)
@@ -29,7 +30,7 @@ In conclusion, this script is there to make life easier for administrators.
     - [Suspend-ADUsersFromList](/poject/modules/operations/TPI_OPS_Suspension.psm1)
     - [Start-ADDeactivatedUsersReview](/poject/modules/operations/TPI_OPS_Review.psm1)
     - [Remove-LeaverUsersFromAD](/poject/modules/operations/TPI_OPS_Leaver.psm1)
-  - [Modules de tâches](/poject/modules/tasks/readme.md)**
+  - [Modules de tâches](/poject/modules/tasks/readme.md)
     - [Convert-AnyText2Normal](/poject/modules/tasks/TPI_TSK_ConvertAnyText2Normal.psm1)
     - [Confirm-AlwaysReadHost](/poject/modules/tasks/TPI_TSK_AlwaysReadHost.psm1)
     - [Copy-ADUserMemberships](/poject/modules/tasks/TPI_TSK_CopyADUserMemberships.psm1)
