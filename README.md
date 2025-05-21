@@ -12,10 +12,10 @@ In conclusion, this script is there to make life easier for administrators.
 
 
 # Table of Contents
-**[Modélisation](documentation/conception.md)**
+**[Modélisation](documentation/conception.md#Modelisation)**
   - [Généralités](documentation/conception.md#Généralités)
     - [Convention de nommage](documentation/conception.md#Convention-de-nommage)
-    - [Types des fonctions](documentation/conception.md#Types-des-fonctions)
+    - [Types des fonctions](documentation/conception.md#Les-ypes-des-fonctions)
     - [Configurations](documentation/conception.md#Configurations)
     - [Debug](documentation/conception.md#Debug)
   - [Orchestrateur](documentation/conception.md#Orchestrateur)
