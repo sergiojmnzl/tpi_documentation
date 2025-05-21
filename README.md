@@ -11,7 +11,7 @@ Finally, only admins shoud run use the script, and everything is designed to pre
 In conclusion, this script is there to make life easier for administrators.
 
 
-# Documentation technique
+# Technical documentation
 - [Introduction](#introduction)
 - [Conception](#conception)
   - [Généralités](#généralités)
