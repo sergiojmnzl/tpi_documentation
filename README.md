@@ -56,8 +56,9 @@ Voici l’aperçu initial
 ![howtoPicture1](/poject/pics/howtoPicture1.png)
 
   **archive** :  contient les fichier test  et  toute autre ligne de code utilisé pour   lors de la création de scripts 
-  **Orchestrator.ps1** :  est le script que gère l’interface utilisateur.
-  **modules** :  contient tous les modules fonctionnels et 
+  **Orchestrator.ps1** :  est le script que gère l’interface utilisateur. 
+  **modules** :  contient tous les modules fonctionnels
+
 2. Dans « modules » 
 
 ![howtoPicture2](/poject/pics/howtoPicture2.png)
