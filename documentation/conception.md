@@ -1,4 +1,4 @@
-# Modélisation {#Modelisation} 
+# Modélisation 
 
 Afin de suive les Exigences techniques dans le cahier de charge, pour Maintenance et évolutivité :
 > « Le code doit être modulaire pour permettre des extensions ou des mises à jour futures (par ex., ajout de nouvelles opérations ou intégration avec des outils tiers). Les fonctions principales doivent être réutilisables et indépendantes. (Par ex., même fonction de génération de mod de passe pour « Joiner » ou « Leaver » 
@@ -6,11 +6,11 @@ Afin de suive les Exigences techniques dans le cahier de charge, pour Maintenanc
 Il a été nécessaire de réimager le script initialement demandé. En effet, la création d’un seul et unique script de 2000 lignes n’est pas une solution viable. Une telle approche rendrait le code difficile à lire, à maintenir et à déboguer. De plus, cela irait à l’encontre des principes de la programmation modulaire.
 Le script a donc été divisé en plusieurs modules, chacun ayant une responsabilité spécifique. Cela permet de mieux organiser le code, de faciliter la maintenance et d'améliorer la lisibilité. Cela permet de réutiliser des fonctions dans différents contextes sans avoir à dupliquer le code. 
 
-## Généralités {#Generalites} 
+## Généralités 
 
 Dans cette section nous allons parcourir génralités des modules et des fonctions. Bien que les modules puissent être de fonctions, le principe d’in module est qu’ils peuvent contenir un ensemble de fonctions comme c’est le cas de « TPI_TSK_ShortTools.psm1 » la raison principale pour laquelle il y ait des modules contenant une seule fonction est le nombre de lignes de la fonction.
 
-### Convention de nommage {#Con-Nommage} 
+### Convention de nommage 
 
 Le préfix "xxx" NomVariable 
 Toutes les fonctions ont leur propre combinaison de caractères qui est utilisé pour les rendre la variable unique et éviter les conflits de nommage entre les différentes fonctions
@@ -19,7 +19,7 @@ Toutes les fonctions ont leur propre combinaison de caractères qui est utilisé
 Le lancement de l’orchestrateur doit se faire avec la session de l’utilisateur ayant les droits nécessaires pour opérer l’AD
 
 
-#### Les modules {Les-modules} 
+#### Les modules 
 Les modules sont nommés avec le préfixe « TPI_TSK_ » pour les modules de tâches   ou « TPI_OPS_ » pour les modules de d’opération, suivi du nom désiré en fonction des actions à réaliser. 
 
 Exemple : 
@@ -33,7 +33,7 @@ Donc, un *« verbe d’action »* plus *« - »* plus *« l’action é réalise
 Exemple : 
 *Reset-ADUserPassword *ou *Get-ADUserBasicInfo* ou *New-RandomPassGeneration*
 
-#### Les types des fonctions {Les-types-des-fonctions} 
+#### Les types des fonctions 
 
 Dans la section pour la convention de nommage nous avons évoqué le point pour les différents types de modules. Cela prend son sens ici. 
 Bien que les modules d’opération contiennent des également des fonctions, celles-ci sont dépendantes des fonctions appartenant aux modules de tâches. Par conséquent, si les modules de tâches ne sont pas importés correctement ou sont défaillantes, les fonctions d’opérations ne pourront pas opérer correctement.
@@ -44,7 +44,7 @@ Elles exécutent un ensemble de fonctions de tâche.
 Example : 
 La fonction « Reset-ADUserPassword » appartient au module « TPI_OPS_ResetPassword.psm1 », comme l’indique son nom elle va changer le mot de passe du compte X. Sa correcte exécution dépend à son tour des fonctions de tâches telles que « Get-ADUserBasicInfo » qui va confirmer si l’utilisateur existe. Puis de la fonction « New-RandomPassGeneration » pour générer un mot de passé sécurisé et ainsi de suite.
 
-#### Fonctions de tâche {Fonctions-de-tâche} 
+#### Fonctions de tâche 
 
 Elles sont capables de réaliser des tâches dans le but d’obtenir un résultat spécifique. 
 
@@ -52,7 +52,7 @@ Elles sont capables de réaliser des tâches dans le but d’obtenir un résulta
 
 « New-RandomPassGeneration » appartiennent à un module « TPI_TSK_XXX.psm1 ».  Et dépend uniquement du système pour retourner un mot de passe.
 
-### Configurations {#Configurations} 
+### Configurations 
 
 Afin de réduire les modifications directes dans les lignes de code. Un standard a été établi sur la base de fichiers de configurations contenant les donnes dans un format HahsTable  dont deux paires de valeurs sont obligatoires 
 
