@@ -11,9 +11,8 @@ Finally, only admins shoud run use the script, and everything is designed to pre
 In conclusion, this script is there to make life easier for administrators.
 
 
-# Technical documentation
-- [Introduction](#introduction)
-- [Conception](#conception)
+# Table of contents
+- [Conception](/project/documentation.md#conception)
   - [Généralités](#généralités)
   - [Modélisation](#modélisation)
   - [Convention de nommage](#convention-de-nommage)

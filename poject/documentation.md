@@ -1,19 +1,19 @@
-Conception
+# Conception
 Note : 
 Dans les derniers tests au 20 mai 2025, certains modules montrent encore des erreurs. Nous pouvons dire que le n’est pas complet malgré les bases établis lors de la conception.
 Example.
   
-Généralités
+## Généralités
 Le préfix "xxx" NomVariable 
 Toutes les fonctions ont leur propre combinaison de caractères qui est utilisé pour les rendre la variable unique et éviter les conflits de nommage entre les différentes fonctions
 Session
 Le lancement de l’orchestrateur doit se faire avec la session de l’utilisateur ayant les droits nécessaires pour opérer l’AD
-Modélisation
+## Modélisation
 Afin de suive les Exigences techniques dans le cahier de charge, pour Maintenance et évolutivité :
 « Le code doit être modulaire pour permettre des extensions ou des mises à jour futures (par ex., ajout de nouvelles opérations ou intégration avec des outils tiers). Les fonctions principales doivent être réutilisables et indépendantes. (Par ex., même fonction de génération de mod de passe pour « Joiner » ou « Leaver » »
 Il a été nécessaire de réimager le script initialement demandé. En effet, la création d’un seul et unique script de 2000 lignes n’est pas une solution viable. Une telle approche rendrait le code difficile à lire, à maintenir et à déboguer. De plus, cela irait à l’encontre des principes de la programmation modulaire.
 Le script a donc été divisé en plusieurs modules, chacun ayant une responsabilité spécifique. Cela permet de mieux organiser le code, de faciliter la maintenance et d'améliorer la lisibilité. Cela permet de réutiliser des fonctions dans différents contextes sans avoir à dupliquer le code. 
- Convention de nommage 
+#### Convention de nommage 
 Les modules
 Les modules sont nommés avec le préfixe « TPI_TSK_ » pour les modules de tâches   ou « TPI_OPS_ » pour les modules de d’opération, suivi du nom désiré en fonction des actions à réaliser.
 Exemple : 
@@ -22,7 +22,7 @@ Les fonctions
 Les fonctions sont nommées en suivant les recommandations des Verbes approuvés pour les commandes PowerShell  . Donc, un « verbe d’action » plus « - » plus « l’action é réaliser »
 Exemple : 
 Reset-ADUserPassword ou Get-ADUserBasicInfo ou New-RandomPassGeneration
-Types des fonctions
+#### Types des fonctions
 Dans la section pour la convention de nommage nous avons évoqué le point pour les différents types de modules. Cela prend son sens ici. 
 Bien que les modules d’opération contiennent des également des fonctions, celles-ci sont dépendantes des fonctions appartenant aux modules de tâches. Par conséquent, si les modules de tâches ne sont pas importés correctement ou sont défaillantes, les fonctions d’opérations ne pourront pas opérer correctement.
 Fonctions d’opérations
@@ -34,7 +34,7 @@ Elles sont capables de réaliser des tâches dans le but d’obtenir un résulta
  Exemple : 
 « New-RandomPassGeneration » appartiennent à un module « TPI_TSK_XXX.psm1 ».  Et dépend uniquement du système pour retourner un mot de passe.
 
-Configurations 
+#### Configurations 
 Afin de réduire les modifications directes dans les lignes de code. Un standard a été établi sur la base de fichiers de configurations contenant les donnes dans un format HahsTable  dont deux paires de valeurs sont obligatoires
     Type = "value0"	et 	Name = "value1"
 Ce système devient très utile au moment de réaliser des opérations de masse ou lors des automatisations. Puisque les paramètres restent dans le même format, il est possible de créer autant de fichier de configuration que l’on souhaite. Cela permet une meilleure organisation 
