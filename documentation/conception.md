@@ -6,11 +6,11 @@ Afin de suive les Exigences techniques dans le cahier de charge, pour Maintenanc
 Il a été nécessaire de réimager le script initialement demandé. En effet, la création d’un seul et unique script de 2000 lignes n’est pas une solution viable. Une telle approche rendrait le code difficile à lire, à maintenir et à déboguer. De plus, cela irait à l’encontre des principes de la programmation modulaire.
 Le script a donc été divisé en plusieurs modules, chacun ayant une responsabilité spécifique. Cela permet de mieux organiser le code, de faciliter la maintenance et d'améliorer la lisibilité. Cela permet de réutiliser des fonctions dans différents contextes sans avoir à dupliquer le code. 
 
-## Généralités {Generalites} 
+## Généralités {#Generalites} 
 
 Dans cette section nous allons parcourir génralités des modules et des fonctions. Bien que les modules puissent être de fonctions, le principe d’in module est qu’ils peuvent contenir un ensemble de fonctions comme c’est le cas de « TPI_TSK_ShortTools.psm1 » la raison principale pour laquelle il y ait des modules contenant une seule fonction est le nombre de lignes de la fonction.
 
-### Convention de nommage {#Convention-de-nommage} 
+### Convention de nommage {#Con-Nommage} 
 
 Le préfix "xxx" NomVariable 
 Toutes les fonctions ont leur propre combinaison de caractères qui est utilisé pour les rendre la variable unique et éviter les conflits de nommage entre les différentes fonctions
@@ -20,7 +20,6 @@ Le lancement de l’orchestrateur doit se faire avec la session de l’utilisate
 
 
 #### Les modules {Les-modules} 
-
 Les modules sont nommés avec le préfixe « TPI_TSK_ » pour les modules de tâches   ou « TPI_OPS_ » pour les modules de d’opération, suivi du nom désiré en fonction des actions à réaliser. 
 
 Exemple : 
@@ -28,7 +27,6 @@ Exemple :
 *« TPI_OPS_ResetPassword.psm1 »* et de la même manière pour *« TPI_TSK_SimpleLogExporter.psm1 »*
 
 #### Les fonctions 
-
 Les fonctions sont nommées en suivant les recommandations des Verbes approuvés pour les commandes PowerShell. 
 Donc, un *« verbe d’action »* plus *« - »* plus *« l’action é réaliser »*
 
