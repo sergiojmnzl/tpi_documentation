@@ -142,11 +142,14 @@ Ou bien, un code HTML
 Pour bien comprendre ce format, nous pouvons les assimiler à des blocks. L’avantage d’utiliser ce format est que nous pouvons les assembler de la manière qui nous convient les mieux. 
 Se référer à la fonction Send-CustomEmailReport pour en savoir plus 
 
-## Orchestrateur 
+# Orchestrateur 
 
 L’Orchestrator agit comme intermédiaire entre l’utilisateur et les modules. Voici un aperçu des interactions  
 
-### Aperçu du script
+
+![diagram](/documentation/pics/diagram.png)
+
+**Aperçu du script**
 
 Orchetrator.ps1 est au sommet des module et ajoute la couche UI ou interface utilisateur pour une expérience « User Friendly »
 Pour éviter de modifier le script, il est possible de rajouter des opérations les rajoutant de puis le fichier de configuration (.\config\Menu.conf) 
@@ -154,9 +157,12 @@ Il est possible de rajouter des opérations en rajoutant le nom de l'opération 
 
 
 
-# Debug
+# Debug 
+
 Pour autant que la session reste ouverte après la fermeture de l’orchestrateur, il est possible d’utiliser la commande Get-Help   pour obtenir de l’aide sur les fonctions. En effet, toutes les fonctions contiennent au minimum les points suivants.
+
 . NOTES    .SYNOPSIS    .DESCRIPTION    .PARAMETER     .EXAMPLE    .OUTPUT .LINK 
+
 De plus, presque tous les lignes de script contiennent des Write-Host commentés et qui peuvent aide    dans le suivi de l’exécution dans les étapes importantes
 
 Exemple : La fonction pour l’opération « Review » 
