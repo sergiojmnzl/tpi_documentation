@@ -9,3 +9,28 @@ With this organizational approach, the code is more readable, easier to scale (f
 Finally, only admins shoud run use the script, and everything is designed to prevent critical errors due to human inattention. 
 
 In conclusion, this script is there to make life easier for administrators.
+
+
+# Documentation technique
+- [Introduction](#introduction)
+- [Conception](#conception)
+  - [Généralités](#généralités)
+  - [Modélisation](#modélisation)
+  - [Convention de nommage](#convention-de-nommage)
+  - [Types des fonctions](#types-des-fonctions)
+- [Debug](#debug)
+- [Orchestrateur](#orchestrateur)
+- [Aperçu du script](#aperçu-du-script)
+- [Modules](#modules)
+  - [Modules d’opération](#modules-dopération)
+    - Get-VMsFromAzure
+    - Get-VMsFromVcenters
+    - Set-NewPassworForADUser
+    - Add_JoinerFromUsersList
+    - Suspend-ADUsersFromList
+    - Start-ADDeactivatedUsersReview
+    - Remove-LeaverUsersFromAD
+  - [Modules de tâches](#modules-de-tâches)
+    - Convert-AnyText2Normal
+    - Confirm-AlwaysReadHost
+    -
