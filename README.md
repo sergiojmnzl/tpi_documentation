@@ -12,24 +12,59 @@ In conclusion, this script is there to make life easier for administrators.
 
 
 # Table of contents
-- [Conception](/project/documentation.md#conception)
-  - [Généralités](#généralités)
-  - [Modélisation](#modélisation)
-  - [Convention de nommage](#convention-de-nommage)
-  - [Types des fonctions](#types-des-fonctions)
-- [Debug](#debug)
-- [Orchestrateur](#orchestrateur)
-- [Aperçu du script](#aperçu-du-script)
-- [Modules](#modules)
-  - [Modules d’opération](#modules-dopération)
-    - Get-VMsFromAzure
-    - Get-VMsFromVcenters
-    - Set-NewPassworForADUser
-    - Add_JoinerFromUsersList
-    - Suspend-ADUsersFromList
-    - Start-ADDeactivatedUsersReview
-    - Remove-LeaverUsersFromAD
-  - [Modules de tâches](#modules-de-tâches)
-    - Convert-AnyText2Normal
-    - Confirm-AlwaysReadHost
-    -
+-   - [Conception](documentation/)(/documentation/conception.md)
+  -   - [Généralités](documentation/)(#généralités)
+  -   - [Modélisation](documentation/)(#modélisation)
+  -   - [Convention de nommage](documentation/)(#convention-de-nommage)
+  -   - [Types des fonctions](documentation/)(#types-des-fonctions)
+-   - [Debug](documentation/)(#debug)
+-   - [Orchestrateur](documentation/)(#orchestrateur)
+-   - [Aperçu du script](documentation/)(#aperçu-du-script)
+-   - [Modules](documentation/)(#modules)
+  -   - [Modules d’opération](documentation/)(#modules-dopération)
+    -   - [Get-VMsFromAzure](documentation/)
+    -   - [Get-VMsFromVcenters](documentation/)
+    -   - [Set-NewPassworForADUser](documentation/)
+    -   - [Add_JoinerFromUsersList](documentation/)
+    -   - [Suspend-ADUsersFromList](documentation/)
+    -   - [Start-ADDeactivatedUsersReview](documentation/)
+    -   - [Remove-LeaverUsersFromAD](documentation/)
+  -   - [Modules de tâches](documentation/)(#modules-de-tâches)
+    -   - [Convert-AnyText2Normal](documentation/)
+    -   - [Confirm-AlwaysReadHost](documentation/)
+    
+
+    Table of Contents
+
+
+[Modélisation](documentation/)(documentation/)
+  - [Généralités](documentation/Generalites.md)
+    - [Convention de nommage](documentation/)
+    - [Types des fonctions](documentation/)
+    - [Debug](documentation/)
+  - [Orchestrateur](documentation/)
+    - [Aperçu du script](/poject/Orchetrator.ps1)
+[Modules](documentation/)(documentation/)
+  - [Modules d’opération](documentation/)
+  - [Get-VMsFromAzure](documentation/)
+  - [Get-VMsFromVcenters](documentation/)
+  - [Set-NewPassworForADUser](documentation/)
+  - [Add_JoinerFromUsersList](documentation/)
+  - [Suspend-ADUsersFromList](documentation/)
+  - [Start-ADDeactivatedUsersReview](documentation/)
+  - [Remove-LeaverUsersFromAD](documentation/)
+  - [Modules de tâches](documentation/)
+  - [Convert-AnyText2Normal](/poject/modules/tasks/TPI_TSK_ConvertAnyText2Normal.psm1)
+  - [Confirm-AlwaysReadHost](/poject/modules/tasks/TPI_TSK_AlwaysReadHost.psm1)
+  - [Copy-ADUserMemberships](/poject/modules/tasks/TPI_TSK_CopyADUserMemberships.psm1)
+  - [Get-ADUserBasicData](/poject/modules/tasks/TPI_TSK_GetADUserBasicData.psm1)
+  - [Send-CustomEmailReport](/poject/modules/tasks/TPI_TSK_SendCustomEmailReport.psm1)
+  - [Use-SimplePatternMatcher](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
+  - [Use-CustomWorkingDirectory](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
+  - [Use-RandomPassGenerator](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
+  - [Use-TextResizer](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
+  - [Use-LogsExporter](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
+  - [Show-OptionsMenuToSelect](/poject/modules/tasks/TPI_TSK_ShowOptionsMenuToSelect.psm1)
+
+
+
