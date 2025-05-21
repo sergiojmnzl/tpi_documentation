@@ -49,14 +49,20 @@ In conclusion, this script is there to make life easier for administrators.
 Avant de commencer, il est fortement recommandé de consulter la documentation technique pour mieux comprendre le fonctionnement de cette suite de scripts. 
 En effet, il faut effectuer quelques configuration pour ne pas avoir de erreurs au moment de son exécution.
 
-1. Décompresser le fichier zip 
+1. Décompresser le fichier zip
+
 Voici l’aperçu initial 
 ![howtoPicture1](/poject/pics/howtoPicture1.png)
+
   **archive** :  contient les fichier test  et  toute autre ligne de code utilisé pour   lors de la création de scripts 
   **Orchestrator.ps1** :  est le script que gère l’interface utilisateur.
   **modules** :  contient tous les modules fonctionnels et 
 2. Dans « modules » 
+
 ![howtoPicture2](/poject/pics/howtoPicture2.png)
+
 3. Lancement  du script 
+
 ![howtoPicture3](/poject/pics/howtoPicture3.png) 
+
 .\Orchetrator.ps1 et voilà, il suffit de suivre les indications  
