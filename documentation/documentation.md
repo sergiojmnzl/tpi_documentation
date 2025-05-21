@@ -25,6 +25,7 @@ Reset-ADUserPassword ou Get-ADUserBasicInfo ou New-RandomPassGeneration
 #### Types des fonctions
 Dans la section pour la convention de nommage nous avons évoqué le point pour les différents types de modules. Cela prend son sens ici. 
 Bien que les modules d’opération contiennent des également des fonctions, celles-ci sont dépendantes des fonctions appartenant aux modules de tâches. Par conséquent, si les modules de tâches ne sont pas importés correctement ou sont défaillantes, les fonctions d’opérations ne pourront pas opérer correctement.
+
 Fonctions d’opérations
 Elles exécutent un ensemble de fonctions de tâche. 
 Example : 
@@ -40,7 +41,7 @@ Afin de réduire les modifications directes dans les lignes de code. Un standard
 Ce système devient très utile au moment de réaliser des opérations de masse ou lors des automatisations. Puisque les paramètres restent dans le même format, il est possible de créer autant de fichier de configuration que l’on souhaite. Cela permet une meilleure organisation 
 Exemple
  
-Backups.conf
+##### Backups.conf
 Contient les informations nécessaires pour sen connecter dans Azure et un vCenter
 @{
     type = "VMware2";
@@ -56,32 +57,35 @@ Contient les informations nécessaires pour sen connecter dans Azure et un vCent
     certName = "CertName"
 }
 
-Menu.conf
+##### Menu.conf
 Contient les informations nécessaires pour afficher le menu des opérations
 @{  
     Type = "Menu";
     Name = "UI";
     Options = "Joiner","Suspension","Leaver","Review","Reset Password"
 }
-SMTP.conf
+
+##### SMTP.conf
 Contient les informations nécessaires pour envoyer un email (server + body)
 @{  
     Type = "Server";
     Name = "ResetPassword";
-    SmtpServer = "172.16.3.100";
+    SmtpServer = "smpt.beemusic.ch";
     Port = "25";
     From = "TestRoport@beemusic.ch";
 }
-Ou bien 
+Ou bien
+ 
 @{  
     Type = "Server";
     Name = "fnzSMTP";
     SmtpServer = "SMTP.beemusic.ch";
     Port = "25";
-    From = "TestRoport@fnz.com";
-    To = "sergio.jimenez@fnz.com","admin@sergio.jimenez.ch";
+    From = "TestRoport@beemusic.ch";
+    To = "sergio.jimenez@beemusic.ch","support@beemusic.ch";
 }
 Ou bien, un code HTML
+`
 @{
     Type = "HTML";
     Name = "ResetPassword";
@@ -100,6 +104,7 @@ Ou bien, un code HTML
 </html>
 "
 }
+`
 Pour bien comprendre ce format, nous pouvons les assimiler à des blocks. L’avantage d’utiliser ce format est que nous pouvons les assembler de la manière qui nous convient les mieux. 
 Se référer à la fonction Send-CustomEmailReport pour en savoir plus
 Debug
@@ -337,7 +342,7 @@ Confirm-AlwaysReadHost -Counts 5 -Message "Entrez une adresse email" -MessageAid
 # Affiche un message d'aide après 5 tentatives infructueuses.
 EXAMPLE
 Confirm-AlwaysReadHost -Counts 3 -Message "Entrez une valeur" -Thank "Merci!"
-# Demande à l'utilisateur de saisir une valeur et continue de le faire
+ Demande à l'utilisateur de saisir une valeur et continue de le faire
 OUTPUTS
 Renvoie la valeur saisie par l'utilisateur.
 
