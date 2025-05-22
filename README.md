@@ -12,8 +12,8 @@ In conclusion, this script is there to make life easier for administrators.
 
 
 # Table of Contents
-**[Modélisation](documentation/conception.md#Modelisation)**
-  - [Généralités](documentation/conception.md#Généralités)
+**[Conception](documentation/conception.md)**
+  - [Abstract](documentation/conception.md#Abstract)
     - [Convention de nommage](documentation/conception.md#Convention-de-nommage)
     - [Types des fonctions](documentation/conception.md#Les-ypes-des-fonctions)
     - [Configurations](documentation/conception.md#Configurations)
