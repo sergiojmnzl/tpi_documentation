@@ -138,7 +138,7 @@ Or, an HTML code
 To fully understand this format, we can think of them as blocks. The advantage of using this format is that we can put them together in the way that suits us best. Refer to the *Send-CustomEmailReport* function for more information 
 
 
-# Orchestrateur 
+# Orchestrator 
 
 The Orchestrator acts as an intermediary between the user and the modules.
 
@@ -149,7 +149,7 @@ The Orchestrator acts as an intermediary between the user and the modules.
 
 **Aperçu du script**
 
-Orchetrator.ps1 is at the top of the modules and adds the UI layer for a User Friendly experience To avoid modifying the script, it is possible to add operations adding them from the configuration file `(.\poject/modules/config/Menu.conf)`. It is possible to add operations by adding the name of the operation to the $intOprerationList list and creating the corresponding operation module.
+Orchetrator.ps1 is at the top of the modules and adds the UI layer for a User Friendly experience To avoid modifying the script, it is possible to add operations adding them from the configuration file `(.\poject\modules\config\Menu.conf)`. It is possible to add operations by adding the name of the operation to the $intOprerationList list and creating the corresponding operation module.
 
 
 
@@ -157,13 +157,7 @@ Orchetrator.ps1 is at the top of the modules and adds the UI layer for a User Fr
 
 As long as the session remains open after the orchestrator is closed, you can use the Get-Help command to get help with the functions. Indeed, all functions contain at least the following points.
 
-.NOTES
-.SYNOPSIS
-.DESCRIPTION
-.PARAMETER
-.EXAMPLE
-.OUTPUT
-.LINK 
+.NOTES  .SYNOPSIS   .DESCRIPTION    .PARAMETER  .EXAMPLE    .OUTPUT     .LINK 
 
 In addition, almost all script lines contain commented Write-Hosts that can help in tracking execution in important steps
 
