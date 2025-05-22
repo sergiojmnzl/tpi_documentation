@@ -41,12 +41,10 @@ They perform a set of task functions.
 
 Example: The "Reset-ADUserPassword" function belongs to the *TPI_OPS_ResetPassword.psm1* module, as its name suggests, it will change the password of the X account. Its proper execution in turn depends on task functions such as "Get-ADUserBasicInfo" which will confirm whether the user exists. Then the "New-RandomPassGeneration" function to generate a secure password and so on.
 
-### Task Functions
+### Task Functions 
 They are able to perform tasks with the aim of achieving a specific result.
 
-Example:
-
-*Use-RandomPassGenerator* belongs to a module *TPI_TSK_XXX.psm1*. And depends solely on the system to return a password.
+Example: *Use-RandomPassGenerator* belongs to a module *TPI_TSK_XXX.psm1*. And depends solely on the system to return a password.
 
 ### Configurations 
 
