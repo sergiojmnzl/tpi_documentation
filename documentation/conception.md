@@ -29,7 +29,7 @@ Exemple :
 Functions are named following the recommendations of the [Approved Verbs for PowerShell commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.5). So, an *Action Verb* plus *-* plus the *action to be carried out*
 
 Exemple : 
-*Reset-ADUserPassword *ou *Get-ADUserBasicInfo* ou *New-RandomPassGeneration*
+*Reset-ADUserPassword* ou *Get-ADUserBasicInfo* ou *New-RandomPassGeneration*
 
 ## Types of functions
 
