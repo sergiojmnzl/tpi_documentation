@@ -1,64 +1,62 @@
-# Modélisation 
+# Abstract 
 
-Afin de suive les Exigences techniques dans le cahier de charge, pour Maintenance et évolutivité :
-> « Le code doit être modulaire pour permettre des extensions ou des mises à jour futures (par ex., ajout de nouvelles opérations ou intégration avec des outils tiers). Les fonctions principales doivent être réutilisables et indépendantes. (Par ex., même fonction de génération de mod de passe pour « Joiner » ou « Leaver » 
+In order to follow the Technical Requirements in the specifications, for Maintenance and Scalability:
+> « Le code doit être modulaire pour permettre des extensions ou des mises à jour futures (par ex., ajout de nouvelles opérations ou intégration avec des outils tiers). Les fonctions principales doivent être réutilisables et indépendantes. (Par ex., même fonction de génération de mod de passe pour "Joiner" ou "Leaver" 
 
-Il a été nécessaire de réimager le script initialement demandé. En effet, la création d’un seul et unique script de 2000 lignes n’est pas une solution viable. Une telle approche rendrait le code difficile à lire, à maintenir et à déboguer. De plus, cela irait à l’encontre des principes de la programmation modulaire.
-Le script a donc été divisé en plusieurs modules, chacun ayant une responsabilité spécifique. Cela permet de mieux organiser le code, de faciliter la maintenance et d'améliorer la lisibilité. Cela permet de réutiliser des fonctions dans différents contextes sans avoir à dupliquer le code. 
+It was necessary to reimage the script initially requested. Indeed, the creation of a single script of 2000 lines is not a viable solution. Such an approach would make the code difficult to read, maintain, and debug. Moreover, it would go against the principles of modular programming. The script was therefore divided into several modules, each with a specific responsibility. This helps to better organize the code, facilitate maintenance, and improve readability. This allows functions to be reused in different contexts without having to duplicate the code. 
 
-## Généralités 
+In this section, we'll walk through the generalities of modules and functions. Although modules can be functions, the principle of in module is that they can contain a set of functions as is the case with *TPI_TSK_ShortTools.psm1* The main reason why there are modules containing a single function is the number of lines of code for that function.
 
-Dans cette section nous allons parcourir génralités des modules et des fonctions. Bien que les modules puissent être de fonctions, le principe d’in module est qu’ils peuvent contenir un ensemble de fonctions comme c’est le cas de « TPI_TSK_ShortTools.psm1 » la raison principale pour laquelle il y ait des modules contenant une seule fonction est le nombre de lignes de la fonction.
+## Session 
 
-### Convention de nommage 
+The orchestrator must be launched with the user's session that has the necessary admin rights to operate the Active Directory 
 
-Le préfix "xxx" NomVariable 
-Toutes les fonctions ont leur propre combinaison de caractères qui est utilisé pour les rendre la variable unique et éviter les conflits de nommage entre les différentes fonctions
+## Naming convention
 
-#### Session
-Le lancement de l’orchestrateur doit se faire avec la session de l’utilisateur ayant les droits nécessaires pour opérer l’AD
+### The *xxx* prefix *VariableName* 
 
+All functions have their own combination of characters that is used to make them the variable unique and avoid naming conflicts between different functions
 
-#### Les modules 
-Les modules sont nommés avec le préfixe « TPI_TSK_ » pour les modules de tâches   ou « TPI_OPS_ » pour les modules de d’opération, suivi du nom désiré en fonction des actions à réaliser. 
+###  Modules naming
+
+Modules are prefixed with *TPI_TSK_* for task modules or *TPI_OPS_* for operation modules, followed by the desired name depending on the actions to be performed.
 
 Exemple : 
 
-*« TPI_OPS_ResetPassword.psm1 »* et de la même manière pour *« TPI_TSK_SimpleLogExporter.psm1 »*
+*TPI_OPS_ResetPassword.psm1* et de la même manière pour *`TPI_TSK_SimpleLogExporter.psm1`
 
-#### Les fonctions 
-Les fonctions sont nommées en suivant les recommandations des Verbes approuvés pour les commandes PowerShell. 
-Donc, un *« verbe d’action »* plus *« - »* plus *« l’action é réaliser »*
+### Functions naming
+
+Functions are named following the recommendations of the [Approved Verbs for PowerShell commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.5). So, an *Action Verb* plus *-* plus the *action to be carried out*
 
 Exemple : 
 *Reset-ADUserPassword *ou *Get-ADUserBasicInfo* ou *New-RandomPassGeneration*
 
-#### Les types des fonctions 
+## Types of functions
 
-Dans la section pour la convention de nommage nous avons évoqué le point pour les différents types de modules. Cela prend son sens ici. 
-Bien que les modules d’opération contiennent des également des fonctions, celles-ci sont dépendantes des fonctions appartenant aux modules de tâches. Par conséquent, si les modules de tâches ne sont pas importés correctement ou sont défaillantes, les fonctions d’opérations ne pourront pas opérer correctement.
-Fonctions d’opérations
+In the section for the naming convention we discussed the point for the different types of modules. It makes sense here. Although operation modules also contain functions, these are dependent on functions that belong to the task modules. Therefore, if the task modules are not imported correctly or are faulty, the operations functions will not be able to function correctly. 
 
-Elles exécutent un ensemble de fonctions de tâche. 
+### Operations Functions
 
-Example : 
-La fonction « Reset-ADUserPassword » appartient au module « TPI_OPS_ResetPassword.psm1 », comme l’indique son nom elle va changer le mot de passe du compte X. Sa correcte exécution dépend à son tour des fonctions de tâches telles que « Get-ADUserBasicInfo » qui va confirmer si l’utilisateur existe. Puis de la fonction « New-RandomPassGeneration » pour générer un mot de passé sécurisé et ainsi de suite.
+They perform a set of task functions.
 
-#### Fonctions de tâche 
+Example: The "Reset-ADUserPassword" function belongs to the *TPI_OPS_ResetPassword.psm1* module, as its name suggests, it will change the password of the X account. Its proper execution in turn depends on task functions such as "Get-ADUserBasicInfo" which will confirm whether the user exists. Then the "New-RandomPassGeneration" function to generate a secure password and so on.
 
-Elles sont capables de réaliser des tâches dans le but d’obtenir un résultat spécifique. 
+### Task Functions
+They are able to perform tasks with the aim of achieving a specific result.
 
- Exemple : 
+Example:
 
-« New-RandomPassGeneration » appartiennent à un module « TPI_TSK_XXX.psm1 ».  Et dépend uniquement du système pour retourner un mot de passe.
+*Use-RandomPassGenerator* belongs to a module *TPI_TSK_XXX.psm1*. And depends solely on the system to return a password.
 
 ### Configurations 
 
-Afin de réduire les modifications directes dans les lignes de code. Un standard a été établi sur la base de fichiers de configurations contenant les donnes dans un format HahsTable  dont deux paires de valeurs sont obligatoires 
+To reduce direct changes in lines of code. A standard has been established on the basis of configuration files containing data in a [HahsTable](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_hash_tables?view=powershell-7.5) format with two pairs of values required 
 
 `
-    Type = "value0"	et 	Name = "value1"
+    Type = "value0"	et 	Name = "value1" 
 `
+
 Ce système devient très utile au moment de réaliser des opérations de masse ou lors des automatisations. Puisque les paramètres restent dans le même format, il est possible de créer autant de fichier de configuration que l’on souhaite. Cela permet une meilleure organisation 
 Exemple
  
@@ -68,12 +66,12 @@ Contient les informations nécessaires pour sen connecter dans Azure et un vCent
 
 ```
 @{
-    type = "VMware2";
+    Type = "VMware2";
     Name = "vcenter.domian.local";
     Creds = "C:\scripts\inventory\vcenter.dimain.local.xml" 
 }
 @{ 
-    type = "Azure";
+    Type = "Azure";
     Name = "myTenant3";
     tenantId = "myTenantId3";
     clientId = "myClientId3";
@@ -95,7 +93,7 @@ Contient les informations nécessaires pour afficher le menu des opérations
 
 **SMTP.conf** 
 
-Contient les informations nécessaires pour envoyer un email (server + body )
+Contains the information needed to send an email (server + body)
 
 ```
 @{  
@@ -106,18 +104,18 @@ Contient les informations nécessaires pour envoyer un email (server + body )
     From = "TestRoport@beemusic.ch";
 } 
 ```
-Ou bien 
+Or 
 ```
 @{  
     Type = "Server";
-    Name = "fnzSMTP";
+    Name = "swissSMTP";
     SmtpServer = "SMTP.beemusic.ch";
     Port = "25";
     From = "TestRoport@beemusic.ch";
     To = "sergio.jimenez@beemusic.ch","admin@beemusic.ch";
 }
 ```
-Ou bien, un code HTML
+Or, an HTML code
 ```
 @{
     Type = "HTML";
@@ -139,30 +137,36 @@ Ou bien, un code HTML
 }
 ```
 
-Pour bien comprendre ce format, nous pouvons les assimiler à des blocks. L’avantage d’utiliser ce format est que nous pouvons les assembler de la manière qui nous convient les mieux. 
-Se référer à la fonction Send-CustomEmailReport pour en savoir plus 
+To fully understand this format, we can think of them as blocks. The advantage of using this format is that we can put them together in the way that suits us best. Refer to the *Send-CustomEmailReport* function for more information 
+
 
 # Orchestrateur 
 
-L’Orchestrator agit comme intermédiaire entre l’utilisateur et les modules. Voici un aperçu des interactions  
+The Orchestrator acts as an intermediary between the user and the modules.
+
+ Here's an overview of the interactions
 
 
 ![diagram](/documentation/pics/diagram.png)
 
 **Aperçu du script**
 
-Orchetrator.ps1 est au sommet des module et ajoute la couche UI ou interface utilisateur pour une expérience « User Friendly »
-Pour éviter de modifier le script, il est possible de rajouter des opérations les rajoutant de puis le fichier de configuration (.\config\Menu.conf) 
-Il est possible de rajouter des opérations en rajoutant le nom de l'opération dans la liste $intOprerationList et en créant le module d'opération correspondant.
+Orchetrator.ps1 is at the top of the modules and adds the UI layer for a User Friendly experience To avoid modifying the script, it is possible to add operations adding them from the configuration file `(.\config\Menu.conf)`. It is possible to add operations by adding the name of the operation to the $intOprerationList list and creating the corresponding operation module.
 
 
 
 # Debug 
 
-Pour autant que la session reste ouverte après la fermeture de l’orchestrateur, il est possible d’utiliser la commande Get-Help   pour obtenir de l’aide sur les fonctions. En effet, toutes les fonctions contiennent au minimum les points suivants.
+As long as the session remains open after the orchestrator is closed, you can use the Get-Help command to get help with the functions. Indeed, all functions contain at least the following points.
 
-. NOTES    .SYNOPSIS    .DESCRIPTION    .PARAMETER     .EXAMPLE    .OUTPUT .LINK 
+.NOTES
+.SYNOPSIS
+.DESCRIPTION
+.PARAMETER
+.EXAMPLE
+.OUTPUT
+.LINK 
 
-De plus, presque tous les lignes de script contiennent des Write-Host commentés et qui peuvent aide    dans le suivi de l’exécution dans les étapes importantes
+In addition, almost all script lines contain commented Write-Hosts that can help in tracking execution in important steps
 
-Exemple : La fonction pour l’opération « Review » 
+Example: The function for the *Review* operation
