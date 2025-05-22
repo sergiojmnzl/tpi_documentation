@@ -2,34 +2,29 @@ function Confirm-AlwaysReadHost {
     <#
         .SYNOPSIS
             Assure que l'utilisateur entre une valeur quelconque.
-
         .DESCRIPTION
             Cette fonction est une version améliorée de Read-Host qui demande à l'utilisateur de saisir une valeur et continue de le faire jusqu'à ce qu'une valeur fournie. 
             Elle affiche un message d'aide si l'utilisateur ne fournit pas de valeur après X tentatives. Le nombre de tentatives, le message d'aide et le message de remerciement peuvent être personnalisés.
         .PARAMETER Counts
             Le nombre de tentatives autorisées avant d'afficher un message d'aide. Par défaut, il est défini sur 3. 
-            Il est posssible de cacher le nombre de tentatives an commenttant le ligne à partir de "(attempt $arhAptem of $arhCount)"
+            Il est posssible de cacher le nombre de tentatives an commenttant le ligne à partir de "(attempt $arhAptemt of $arhCount)"
         .PARAMETER Thank
             Le message de remerciement à afficher après une saisie réussie. Par défaut, il est défini sur "Tank you!".
         .PARAMETER Message
             Le message à afficher lors de la demande de saisie. Par défaut, il est défini sur "Entrez une valeur ".
         .PARAMETER MessageAide
             Le message d'aide à afficher si l'utilisateur ne fournit pas de valeur après X tentatives. Par défaut, il est défini sur "Veuillez fournir queleque chose au moins ".
-
         .EXAMPLE
             Confirm-AlwaysReadHost -Counts 5 -Message "Entrez une adresse email" -MessageAide "Please provide something at least!"
             # Demande à l'utilisateur de saisir une adresse e-mail et continue de le faire jusqu'à ce qu'une valeur soit fournie. 
             # Affiche un message d'aide après 5 tentatives infructueuses.
-
         .EXAMPLE
             Confirm-AlwaysReadHost -Counts 3 -Message "Entrez une valeur" -Thank "Merci!"
             # Demande à l'utilisateur de saisir une valeur et continue de le faire
-
         .OUTPUTS
             Renvoie la valeur saisie par l'utilisateur.
-
         .LINK
-
+            https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/read-host?view=powershell-7.2
         .NOTES
             Auteur : Sergio Jimenez
             Date : 15 Mai 2025
@@ -48,8 +43,8 @@ function Confirm-AlwaysReadHost {
     do {
         $emptyCount = 0
         $arhConfirmedInput = $null
-        for ($arhAptem= 1; $arhAptem -le $arhCount; $arhAptem++) {
-            $arhConfirmedInput = Read-Host "$arhMassage (attempt $arhAptem of $arhCount)"
+        for ($arhAptemt= 1; $arhAptemt -le $arhCount; $arhAptemt++) {
+            $arhConfirmedInput = Read-Host "$arhMassage (attempt $arhAptemt of $arhCount)"
             if ([string]::IsNullOrWhiteSpace($arhConfirmedInput)) {
                 $emptyCount++
             } else { 
