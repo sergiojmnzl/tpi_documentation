@@ -23,7 +23,7 @@ Modules are prefixed with *TPI_TSK_* for task modules or *TPI_OPS_* for operatio
 
 Exemple : 
 
-*TPI_OPS_ResetPassword.psm1* et de la même manière pour *`TPI_TSK_SimpleLogExporter.psm1`
+*TPI_OPS_ResetPassword.psm1* et de la même manière pour *TPI_TSK_SimpleLogExporter.psm1*
 
 ### Functions naming
 
