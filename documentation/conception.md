@@ -13,10 +13,10 @@ The orchestrator must be launched with the user's session that has the necessary
 
 ## Naming convention
 
-### - The *xxx* prefix *VariableName* 
+### The *xxx* prefix *VariableName* 
 
 All functions have their own combination of characters that is used to make them the variable unique and avoid naming conflicts between different functions
-###  - Modules naming
+###  Modules naming
 
 Modules are prefixed with *TPI_TSK_* for task modules or *TPI_OPS_* for operation modules, followed by the desired name depending on the actions to be performed.
 
@@ -57,8 +57,9 @@ To reduce direct changes in lines of code. A standard has been established on th
 `
 
 Ce système devient très utile au moment de réaliser des opérations de masse ou lors des automatisations. Puisque les paramètres restent dans le même format, il est possible de créer autant de fichier de configuration que l’on souhaite. Cela permet une meilleure organisation 
-Exemple
- 
+
+Exemple 
+
 **Backups.conf** 
 
 Contient les informations nécessaires pour sen connecter dans Azure et un vCenter 
