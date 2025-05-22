@@ -13,10 +13,10 @@ The orchestrator must be launched with the user's session that has the necessary
 
 ## Naming convention
 
-- ### The *xxx* prefix *VariableName* 
+### - The *xxx* prefix *VariableName* 
 
 All functions have their own combination of characters that is used to make them the variable unique and avoid naming conflicts between different functions
-- ###  Modules naming
+###  - Modules naming
 
 Modules are prefixed with *TPI_TSK_* for task modules or *TPI_OPS_* for operation modules, followed by the desired name depending on the actions to be performed.
 
