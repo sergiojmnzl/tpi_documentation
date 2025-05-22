@@ -59,9 +59,9 @@ Here is the initial view
 
 ![howtoPicture1](/poject/pics/howtoPicture1.png) 
 
-  **archive** : Contains the test file and any other lines of code used to create scripts
-  **Orchestrator.ps1** :  It's the script that handles the user interface.
-  **modules** :  Contains all functional modules
+  **archive** : Contains the test file and any other lines of code used to create scripts. 
+  **Orchestrator.ps1** :  It's the script that handles the user interface. 
+  **modules** :  Contains all functional modules. 
 
 2. In « modules » 
 
