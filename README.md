@@ -14,18 +14,25 @@ In conclusion, this script is there to make life easier for administrators.
 # Table of Contents 
 
 [Abstract](/documentation/conception.md#Abstract)  
+
 [Session](/documentation/conception.md#Session)  
+
 [Naming convention](/documentation/conception.md#Naming-convention)  
 - [Variable prefixes](/documentation/conception.md#Variable-prefixes)  
 - [Modules naming](/documentation/conception.md#Modules-naming)  
 - [Functions naming](/documentation/conception.md#Functions-naming)  
+
 [Types of functions](/documentation/conception.md#Types-of-functions)  
   - [Operations Functions](/documentation/conception.md#Operations-Functions)  
   - [Task Functions](/documentation/conception.md#Task-Functions)  
+
 [Configurations](/documentation/conception.md#Configurations)  
+
 [Orchestrateur](/documentation/conception.md#Orchestrateur)  
   - [Script overview](/poject/Orchetrator.ps1)  
+
 [Debug](/documentation/conception.md#Debug)  
+
 [Functions](/poject/modules) 
 - [Operation modules](/poject/modules/operations/readme.md)  (list of fuctions) 
   - [Get-VMsFromAzure](/poject/modules/operations/TPI_OPS_BackupAzureVM.psm1) 
