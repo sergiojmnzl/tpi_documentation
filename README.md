@@ -11,60 +11,64 @@ Finally, only admins shoud run use the script, and everything is designed to pre
 In conclusion, this script is there to make life easier for administrators.
 
 
-# Table of Contents
-**[Conception](documentation/conception.md)**
-  - [Abstract](documentation/conception.md#Abstract)
-    - [Convention de nommage](documentation/conception.md#Convention-de-nommage)
-    - [Types des fonctions](documentation/conception.md#Les-ypes-des-fonctions)
-    - [Configurations](documentation/conception.md#Configurations)
-    - [Debug](documentation/conception.md#Debug)
-  - [Orchestrateur](documentation/conception.md#Orchestrateur)
-    - [Aperçu du script](/poject/Orchetrator.ps1)
+# Table of Contents 
 
-**[Functions](/poject/modules)**
-  - [Operation modules](/poject/modules/operations/readme.md) (list of fuctions)
-    - [Get-VMsFromAzure](/poject/modules/operations/TPI_OPS_BackupAzureVM.psm1)
-    - [Get-VMsFromVcenters](/poject/modules/operations/TPI_OPS_BackupVcenterVM.psm1)
-    - [Set-NewPassworForADUser](/poject/modules/operations/TPI_OPS_ResetPassword.psm1)
-    - [Add_JoinerFromUsersList](/poject/modules/operations/TPI_OPS_Joiners.psm1)
-    - [Suspend-ADUsersFromList](/poject/modules/operations/TPI_OPS_Suspension.psm1)
-    - [Start-ADDeactivatedUsersReview](/poject/modules/operations/TPI_OPS_Review.psm1)
-    - [Remove-LeaverUsersFromAD](/poject/modules/operations/TPI_OPS_Leaver.psm1)
-  - [Task modules](/poject/modules/tasks/readme.md) (list of fuctions)
-    - [Convert-AnyText2Normal](/poject/modules/tasks/TPI_TSK_ConvertAnyText2Normal.psm1)
-    - [Confirm-AlwaysReadHost](/poject/modules/tasks/TPI_TSK_AlwaysReadHost.psm1)
-    - [Copy-ADUserMemberships](/poject/modules/tasks/TPI_TSK_CopyADUserMemberships.psm1)
-    - [Get-ADUserBasicData](/poject/modules/tasks/TPI_TSK_GetADUserBasicData.psm1)
-    - [Send-CustomEmailReport](/poject/modules/tasks/TPI_TSK_SendCustomEmailReport.psm1)
-    - [Use-SimplePatternMatcher](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
-    - [Use-CustomWorkingDirectory](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
-    - [Use-RandomPassGenerator](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
-    - [Use-TextResizer](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
-    - [Use-LogsExporter](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
-    - [Show-OptionsMenuToSelect](/poject/modules/tasks/TPI_TSK_ShowOptionsMenuToSelect.psm1)
+[Abstract](/documentation/conception.md#Abstract)
+[Session](/documentation/conception.md#Session)
+[Naming convention](/documentation/conception.md#Naming-convention)
+- [Variable prefixes](/documentation/conception.md#Variable-prefixes)
+- [Modules naming](/documentation/conception.md#Modules-naming)
+- [Functions naming](/documentation/conception.md#Functions-naming)
+[Types of functions](/documentation/conception.md#Types-of-functions)
+  - [Operations Functions](/documentation/conception.md#Operations-Functions)
+  - [Task Functions](/documentation/conception.md#Task-Functions)
+[Configurations](/documentation/conception.md#Configurations)
+[Orchestrateur](/documentation/conception.md#Orchestrateur)
+  - [Script overview](/poject/Orchetrator.ps1)
+[Debug](/documentation/conception.md#Debug)
+[Functions](/poject/modules)
+- [Operation modules](/poject/modules/operations/readme.md) (list of fuctions)
+  - [Get-VMsFromAzure](/poject/modules/operations/TPI_OPS_BackupAzureVM.psm1)
+  - [Get-VMsFromVcenters](/poject/modules/operations/TPI_OPS_BackupVcenterVM.psm1)
+  - [Set-NewPassworForADUser](/poject/modules/operations/TPI_OPS_ResetPassword.psm1)
+  - [Add_JoinerFromUsersList](/poject/modules/operations/TPI_OPS_Joiners.psm1)
+  - [Suspend-ADUsersFromList](/poject/modules/operations/TPI_OPS_Suspension.psm1)
+  - [Start-ADDeactivatedUsersReview](/poject/modules/operations/TPI_OPS_Review.psm1)
+  - [Remove-LeaverUsersFromAD](/poject/modules/operations/TPI_OPS_Leaver.psm1)
+- [Task modules](/poject/modules/tasks/readme.md) (list of fuctions)
+  - [Convert-AnyText2Normal](/poject/modules/tasks/TPI_TSK_ConvertAnyText2Normal.psm1)
+  - [Confirm-AlwaysReadHost](/poject/modules/tasks/TPI_TSK_AlwaysReadHost.psm1)
+  - [Copy-ADUserMemberships](/poject/modules/tasks/TPI_TSK_CopyADUserMemberships.psm1)
+  - [Get-ADUserBasicData](/poject/modules/tasks/TPI_TSK_GetADUserBasicData.psm1)
+  - [Send-CustomEmailReport](/poject/modules/tasks/TPI_TSK_SendCustomEmailReport.psm1)
+  - [Use-SimplePatternMatcher](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
+  - [Use-CustomWorkingDirectory](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
+  - [Use-RandomPassGenerator](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
+  - [Use-TextResizer](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
+  - [Use-LogsExporter](/poject/modules/tasks/TPI_TSK_ShortTools.psm1)
+  - [Show-OptionsMenuToSelect](/poject/modules/tasks/TPI_TSK_ShowOptionsMenuToSelect.psm1)
 
 
 # How to start
 
-Avant de commencer, il est fortement recommandé de consulter la documentation technique pour mieux comprendre le fonctionnement de cette suite de scripts. 
-En effet, il faut effectuer quelques configuration pour ne pas avoir de erreurs au moment de son exécution.
+Before you begin, it is highly recommended that you consult the technical documentation to better understand how this suite of scripts works. Indeed, you have to do some configuration so as not to have errors at the time of its execution.
 
 1. Décompresser le fichier zip
 
-Voici l’aperçu initial 
+Here is the initial view
 
 ![howtoPicture1](/poject/pics/howtoPicture1.png)
 
-  **archive** :  contient les fichier test  et  toute autre ligne de code utilisé pour   lors de la création de scripts 
-  **Orchestrator.ps1** :  est le script que gère l’interface utilisateur. 
-  **modules** :  contient tous les modules fonctionnels
+  **archive** : Contains the test file and any other lines of code used to create scripts
+  **Orchestrator.ps1** :  It's the script that handles the user interface.
+  **modules** :  Contains all functional modules
 
-2. Dans « modules » 
+2. In « modules » 
 
 ![howtoPicture2](/poject/pics/howtoPicture2.png)
 
-3. Lancement  du script 
+3. Launch the script
 
 ![howtoPicture3](/poject/pics/howtoPicture3.png) 
 
-.\Orchetrator.ps1 et voilà, il suffit de suivre les indications  
+Run .\Orchetrator.ps1 Et voilà, just follow the instrctions.

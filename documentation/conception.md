@@ -1,9 +1,9 @@
 # Abstract 
 
 In order to follow the Technical Requirements in the specifications, for Maintenance and Scalability:
-> « Le code doit être modulaire pour permettre des extensions ou des mises à jour futures (par ex., ajout de nouvelles opérations ou intégration avec des outils tiers). Les fonctions principales doivent être réutilisables et indépendantes. (Par ex., même fonction de génération de mod de passe pour "Joiner" ou "Leaver" 
+> Le code doit être modulaire pour permettre des extensions ou des mises à jour futures (par ex., ajout de nouvelles opérations ou intégration avec des outils tiers). Les fonctions principales doivent être réutilisables et indépendantes. Par ex., même fonction de génération de mod de passe pour "Joiner" ou "Leaver" 
 
-It was necessary to reimage the script initially requested. Indeed, the creation of a single script of 2000 lines is not a viable solution. Such an approach would make the code difficult to read, maintain, and debug. Moreover, it would go against the principles of modular programming. The script was therefore divided into several modules, each with a specific responsibility. This helps to better organize the code, facilitate maintenance, and improve readability. This allows functions to be reused in different contexts without having to duplicate the code. 
+It was necessary to reimagine the script initially requested. Indeed, the creation of a single 2000 lines' script is not a viable solution. Such an approach would make the code difficult to read, maintain and debug. Moreover, it would go against the principles of modular programming. The script was therefore divided into different  modules/, each with a specific responsibility. This helps to better organize the code, facilitate maintenance, and improve readability. This allows functions to be reused in different contexts without having to duplicate the code. 
 
 In this section, we'll walk through the generalities of modules and functions. Although modules can be functions, the principle of in module is that they can contain a set of functions as is the case with *TPI_TSK_ShortTools.psm1* The main reason why there are modules containing a single function is the number of lines of code for that function.
 
@@ -13,9 +13,12 @@ The orchestrator must be launched with the user's session that has the necessary
 
 ## Naming convention
 
-### The *xxx* prefix *VariableName* 
+### Variable prefixes
 
-All functions have their own combination of characters that is used to make them the variable unique and avoid naming conflicts between different functions
+All functions have their own combination of characters that is used to make them the variable unique and avoid naming conflicts between different functions 
+
+*xxx* prefix *VariableName*
+
 ###  Modules naming
 
 Modules are prefixed with *TPI_TSK_* for task modules or *TPI_OPS_* for operation modules, followed by the desired name depending on the actions to be performed.
@@ -157,7 +160,7 @@ Orchetrator.ps1 is at the top of the modules and adds the UI layer for a User Fr
 
 As long as the session remains open after the orchestrator is closed, you can use the Get-Help command to get help with the functions. Indeed, all functions contain at least the following points.
 
-.NOTES  .SYNOPSIS   .DESCRIPTION    .PARAMETER  .EXAMPLE    .OUTPUT     .LINK 
+.NOTES      .SYNOPSIS       .DESCRIPTION        .PARAMETER      .EXAMPLE        .OUTPUT     .LINK 
 
 In addition, almost all script lines contain commented Write-Hosts that can help in tracking execution in important steps
 
